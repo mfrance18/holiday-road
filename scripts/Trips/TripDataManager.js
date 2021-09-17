@@ -1,5 +1,5 @@
 export const createTrip = postObj => {
-	return fetch("http://localhost:8088/trips", {
+	return fetch("https://localhost:8088/trips", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json"
@@ -11,7 +11,7 @@ export const createTrip = postObj => {
   }
 
   export const getTrips = () =>{
-	return fetch(`http://localhost:8088/trips`)
+	return fetch(`https://localhost:8088/trips`)
     .then(response => response.json())
     .then(parsedResponse => {
       return parsedResponse;
